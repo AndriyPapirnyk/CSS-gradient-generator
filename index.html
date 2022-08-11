@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Gradient Generator</title>
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <h2 class="logo">Gradient Generator <br> <span class="logo2">Created by Andriy Papirnyk</span></h2>
+        <div class="row" id="row">
+            <div id="unblend">Unblend</div>
+            <div class="cb_holder">
+            <div id="cube">
+                <div class="ccc"></div>
+            </div>
+            <div id="ring">
+                <div class="rrr"></div>
+            </div>
+            </div>
+            <div class="code_wiew" id="code_wiew"></div>
+        </div>
+        <div class="deg_change" id="deg_change">
+            <input type="range" name="" id="degg_ch" min="-180" max="180" step="1" value="90">
+            <p id="deg_count">90</p>
+        </div>
+        <div id="code_window">
+            <h2 id="code_txt"></h2>
+            <div id="button_close">Close</div>
+        </div>
+        <div class="window window1" id="w1"></div>
+        <div class="window window2" id="w2"></div>
+        <img class="c_img c1" src="color-wheel.png" alt="">
+        <img class="c_img c2" src="color-wheel.png" alt="">
+        <input type="color" id="color1" class="inputColor" value="#3958bc">
+        <button id="blend">Blend</button>
+        <button id="rand">Random</button>
+        <input type="color" id="color2" class="inputColor" value="#01165c">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
